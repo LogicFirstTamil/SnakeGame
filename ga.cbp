@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ga" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ga" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-system-d-2" />
+					<Add library="sfml-window-d-2" />
+					<Add library="sfml-graphics-d-2" />
+					<Add library="sfml-network-d-2" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ga" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-system-2" />
+					<Add library="sfml-window-2" />
+					<Add library="sfml-graphics-2" />
+					<Add library="sfml-network-2" />
+					<Add library="sfml-audio-2" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/Program Files/CodeBlocks/SFML-2.5.1-sources/SFML-2.5.1/include" />
+		</Compiler>
+		<Linker>
+			<Add directory="C:/Program Files/CodeBlocks/SFML Build/lib" />
+		</Linker>
+		<Unit filename="images/green.png" />
+		<Unit filename="images/red.png" />
+		<Unit filename="include/Food.h" />
+		<Unit filename="include/Snake.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Food.cpp" />
+		<Unit filename="src/Snake.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
